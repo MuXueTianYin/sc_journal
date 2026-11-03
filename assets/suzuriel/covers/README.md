@@ -37,7 +37,7 @@
 covers/
   README.md
   png/      # 原图母版分发（约 2～2.8MB / 张，1536×1024）
-  web/      # 站内用小图（webp + jpg，宽 1280，约 70～200KB）
+  web/      # 站内用小图（仅 webp，宽 1280，约 70～200KB）
   source/   # 设计母版 *-master.png
 ```
 
