@@ -34,8 +34,14 @@
 ## 目录
 
 ```text
-assets/covers/sc-journal/
+covers/
   README.md
-  png/      # 可分发
-  source/   # 母版 *-master.png
+  png/      # 原图母版分发（约 2～2.8MB / 张，1536×1024）
+  web/      # 站内用小图（webp + jpg，宽 1280，约 70～200KB）
+  source/   # 设计母版 *-master.png
 ```
+
+## 站内加载（重要）
+
+站点配置（`src/config/memorial.ts` / `wallpaper.ts`）默认引用 **`web/*.webp`**，避免原 PNG 过大在弱网加载失败。  
+重新压缩：`node scripts/optimize-covers.mjs`（保留 `png/`，覆盖写入 `web/`）。
